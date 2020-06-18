@@ -20,3 +20,10 @@ $ yarn generate
 ```
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
+
+## Docker run
+
+```sh
+docker build -t imagename .
+docker run --rm -it -p 3000:3000 -e BASE_URL=http://localhost:8080 -e TEST_ENV=test imagename
+```
